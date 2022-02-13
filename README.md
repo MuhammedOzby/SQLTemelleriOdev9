@@ -22,7 +22,7 @@ INNER JOIN country
 
 ```SQL
 SELECT 
-  CONCAT( customer.first_name, ' ', customer.last_name,) AS "full_name", 
+  CONCAT( customer.first_name, ' ', customer.last_name) AS "full_name", 
   customer.first_name, customer.last_name, payment.payment_id 
 FROM customer
 INNER JOIN payment
@@ -33,7 +33,7 @@ INNER JOIN payment
 
 ```SQL
 SELECT
-  CONCAT( customer.first_name, ' ', customer.last_name,) AS "full_name", 
+  CONCAT( customer.first_name, ' ', customer.last_name) AS "full_name", 
   customer.first_name, customer.last_name, rental.rental_id 
 FROM customer
 INNER JOIN rental
